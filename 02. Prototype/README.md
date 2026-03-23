@@ -17,11 +17,24 @@ This is a small CLI-Tool for queries regarding statistical data in natural langu
 ## Example Query
 `Frage: Welcher Bezirk hat die meisten Einwohner?`
 
-## Classes
-- `prompts.py` includes the query and answer prompt
-- `llm.py` includes LLM-Model etc.
-- `query_engine.py` 
-- `main.py` 
+## Structure
+````
+02. Prototype/
+│
+├── src/
+│   ├── data
+│   │   ├── wien_bevoelkerung.csv      # Original data
+│   │   └── cleaned_data.csv           # Cleaned data
+│   ├── .env                           # API-Key
+│   ├── clean_data.py                  # Python script to clean data
+│   ├── llm.py                         # Connection to LLM
+│   ├── prompts.py                     # Prompts
+│   ├── query_engine.py                # Execution of Code
+│   └── main.py                        # CLI-Tool
+│
+├── README.md
+└── requirements.txt
+````
 
 ## Setup
 1. Rename `.examplenv` to `.env` and add your OpenAI API-Key
@@ -40,7 +53,6 @@ This is a small CLI-Tool for queries regarding statistical data in natural langu
    - `Antwort` is the natural language answer from the LLM.
 
 ## Examples
-- Bild 1
-- Bild 2
-- Bild 3
-- Bild 4
+![Example Query 1](img/query1.png)
+![Example Query 2](img/query2.png)
+![Example Query 3](img/query3.png)
