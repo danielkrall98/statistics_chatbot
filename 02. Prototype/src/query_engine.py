@@ -15,4 +15,6 @@ def run_query(code):
         exec(code, {}, local_vars)
         return local_vars.get("result", "No result returned")
     except Exception as e:
+        if "out-of-bounds" in str(e):
+            return None
         return f"Error executing query: {e}"

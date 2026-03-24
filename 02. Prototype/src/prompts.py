@@ -28,6 +28,9 @@ Rules:
 - Do not include explanations or comments
 - If filtering is needed, always assign the filtered dataframe to a variable first
 - Then perform operations on that filtered dataframe
+- Always check if a filtered dataframe is empty before accessing values
+- Never use .iloc[0] without checking if the dataframe is empty
+- If a filtered dataframe is empty, return: result = None
 - If the question cannot be answered with the data, return: result = None
 
 User question:

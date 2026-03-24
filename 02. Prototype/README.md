@@ -53,6 +53,14 @@ This is a small CLI-Tool for queries regarding statistical data in natural langu
    - `Antwort` is the natural language answer from the LLM.
 
 ## Examples
+`Wie viele Einwohner hat Wien?`
 ![Example Query 1](img/query1.png)
+
+`Welcher Bezirk Wiens hat die meisten Einwohner?`
 ![Example Query 2](img/query2.png)
+
+`Wie viele Frauen leben in Mariahilf?`
 ![Example Query 3](img/query3.png)
+
+`Wie viele Einwohner hat Salzburg?`
+![Example Query 4](img/query4.png)
