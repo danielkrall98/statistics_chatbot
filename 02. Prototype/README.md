@@ -37,7 +37,7 @@ This is a small CLI-Tool for queries regarding statistical data in natural langu
 ````
 
 ## Setup
-1. Rename `.examplenv` to `.env` and add your OpenAI API-Key
+1. Rename `.env.example` to `.env` and add your OpenAI API-Key
 2. In `/02. Prototype`
 - `python3 -m venv environment-name`
 - `source environment-name/bin/activate`
