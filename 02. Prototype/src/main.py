@@ -2,7 +2,7 @@
 
 from llm import call_llm
 from prompts import get_query_prompt, get_answer_prompt
-from query_engine import run_query
+from query_engine import run_query, df
 
 def main():
     print("Statistik Chatbot (type 'exit' to quit)\n")
@@ -14,7 +14,7 @@ def main():
             break
 
         # Step 1: Generate Query
-        query_prompt = get_query_prompt(question)
+        query_prompt = get_query_prompt(question, df)
         query_code = call_llm(query_prompt)
 
         print("\nGenerated Query:\n", query_code)

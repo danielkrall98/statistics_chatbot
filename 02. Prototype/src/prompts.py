@@ -1,4 +1,7 @@
-def get_query_prompt(question):
+def get_query_prompt(question, df):
+    sample_data = df.head(5).to_string()
+    regions = df["region"].tolist()
+
     return f"""
 You are a data analyst working with a pandas DataFrame called df.
 
@@ -13,6 +16,12 @@ Columns:
 - foreign_total
 - foreign_male
 - foreign_female
+
+Available Regions:
+{regions}
+
+Example data:
+{sample_data}
 
 Important:
 - "Wien" represents the total population and is NOT a district.
